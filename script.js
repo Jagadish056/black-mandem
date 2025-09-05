@@ -10,7 +10,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         async getData() {
-            return await fetch("/gtav.json").then(res => console.log(res)).then(res => res.data)
+            return await fetch("./gtav.json").then(res => res.json()).then(res => res.data)
         }
     })
 
