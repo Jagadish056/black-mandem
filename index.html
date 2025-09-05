@@ -3,11 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLACK MANDEM</title>
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=aladin:400|atomic-age:400|black-ops-one:400" rel="stylesheet" />
+
         <link href="./style.css" rel="stylesheet">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     </head>
-    <body>
-        <h1 class="text-xl font-bold underline">
-            Hello world!
-        </h1>
+    <body class="h-screen" x-data x-init="$store.gtav.init()">
+        <!-- background-image: linear-gradient(to bottom, rgba(29, 27, 27, 1), rgba(29, 27, 27, 0.5)), url('./images/3.png') -->
+       <div class="h-11/12 p-16 text-white bg-black relative overflow-hidden" x-data="hero" >
+
+            <!-- Background layer -->
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed transition-all ease-in-out duration-1000 opacity-0" :class="{ 'opacity-100': loading }"
+                :style="`background-image: url('${backgroundImages[activeBackgroundImage]}')`">
+            </div>
+
+            <!-- Title -->
+            <h1 class="absolute top-1/6 block w-full text-[200px] leading-40 text-center font-display transition-all ease-in duration-1000 opacity-0" :class="{ 'opacity-100': !loading || activeBackgroundImage == 0 }">BLACK<br>MANDEM</h1>
+        </div>
+
+        <div class="max-w-7xl w-full mx-auto p-16">
+            <h2 class="mb-16 text-7xl text-center font-display underline underline-offset-8">Our Roster</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <template x-for="roster in $store.gtav.data.blackMandem?.roster">
+                    <div class="text-center space-y-4">
+                        <img class="size-50 mx-auto rounded-full" :src="roster.avatar" alt="" srcset="">
+                        <div class="flex flex-col leading-tight">
+                            <span class="font-display" x-text="roster.name"></span>
+                            <span class="font-mono capitalize" x-text="roster.role"></span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="text-white bg-black">
+            <div class="max-w-4xl w-full mx-auto p-16">
+                <h2 class="mb-16 text-7xl text-center font-display">OUR HISTORY</h2>
+                <ul>
+                    <template x-for="vs in $store.gtav.data.blackMandem?.vs">
+                        <li class="p-4 grid grid-cols-4 gap-4" :class="{'text-green-100 bg-gradient-to-r from-green-900/5 via-green-600/40 to-green-900/5': vs.status === 'success', 'text-red-100 bg-gradient-to-r from-red-900/5 via-red-600/40 to-red-900/5': vs.status === 'danger'}">
+                            <span class="my-auto text-center font-display uppercase" x-text="vs.title"></span>
+                            <span class="my-auto text-right font-aladin" x-text="vs.subtitle"></span>
+                            <span class="my-auto text-left font-aladin" x-text="vs.for"></span>
+                            <span class="my-auto text-right font-aladin" x-text="new Date(vs.date)"></span>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+        <div class="mx-auto p-32 text-center text-black bg-white">
+            <h2 class="mb-8 text-7xl text-center font-display">BECOME A MANDEM?</h2>
+            <a class="px-6 py-4 text-5xl font-atomic text-white bg-black rounded-lg cursor-pointer" href="https://technojs.com">Contact Us</a>
+        </div>
+        <div class="p-16 text-white bg-black">
+            <h2 class="mb-4 text-7xl text-center font-display">THANK YOU!</h2>
+            <img class="size-40 mx-auto" src="./images/balen-city-survival.png" alt="balen city survival">
+        </div>
+        
     </body>
+    <script src="./script.js"></script>
 </html>

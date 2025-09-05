@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+    --font-display: 'Black Ops One', display;
+    --font-atomic: 'Atomic Age', display;
+    --font-aladin: 'Aladin', handwriting;
+
+    --animate-typing: typing 2.5s steps(13) forwards;
+    --animate-blink: blink 0.8s step-end infinite;
+
+    @keyframes typing {
+        to { width: 13ch; }
+    }
+    @keyframes blink {
+        50% { borderColor: "transparent" }
+    }
+}
