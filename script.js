@@ -1,6 +1,6 @@
 document.addEventListener('alpine:init', () => {
 
-    Alpine.store('dev', true)
+    Alpine.store('dev', false)
     Alpine.store('baseUrl', Alpine.store('dev') ? "" : "https://raw.githubusercontent.com/Jagadish056/black-mandem/refs/heads/main")
 
     Alpine.store('gtav', {
