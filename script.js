@@ -1,7 +1,6 @@
 document.addEventListener('alpine:init', () => {
 
     Alpine.store('dev', false)
-    Alpine.store('baseUrl', Alpine.store('dev') ? "" : "https://raw.githubusercontent.com/Jagadish056/black-mandem/refs/heads/main")
 
     Alpine.store('gtav', {
         data: {},
@@ -13,7 +12,10 @@ document.addEventListener('alpine:init', () => {
         },
 
         async getData() {
-            return await axios.get(Alpine.store('baseUrl') + "/gtav.json").then(res => res.data)
+            
+            const url = Alpine.store('dev') ? "/gtav.json" : "https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main/gtav.json"
+             
+            return await axios.get(url ).then(res => res.data)
         }
     })
 
