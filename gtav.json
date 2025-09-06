@@ -159,25 +159,25 @@
             { 
                 "key":"prospect4",
                 "role":"Prospect Member",
-                "name":"Savio Meg",
+                "name":"Bahun Sir",
                 "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
-                "slogan":"Savio",
+                "slogan":"Bahun",
                 "description":"" 
             },
             { 
                 "key":"prospect5",
-                "role":"Prospect Member",
-                "name":"Lucas Khadka",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
-                "slogan":"Lucas",
+                "role":"Coming Soon",
+                "name":"BLACK MANDEM",
+                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "slogan":"MANDEM",
                 "description":"" 
             },
             { 
                 "key":"prospect6",
-                "role":"Prospect Member",
-                "name":"Bahun Sir",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
-                "slogan":"Bahun",
+                "role":"Coming Soon",
+                "name":"BLACK MANDEM",
+                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "slogan":"MANDEM",
                 "description":"" 
             },
             { 
@@ -217,7 +217,7 @@
         "vs":[
             { "status":"success", "title":"Victory", "subtitle":"GSF", "date":"2025-09-05T07:38:45+05:45", "for":"Gang Domination" },
             { "status":"danger", "title":"Defeat", "subtitle":"Vagos", "date":"2025-09-05T07:38:45+05:45", "for":"Weed processing area" },
-            { "status":"success", "title":"Victory", "subtitle":"GSF", "date":"2025-09-05T07:38:45+05:45", "for":"Weed seed turf" }
+            { "status":"success", "title":"Victory", "subtitle":"GSF", "date":"2025-09-05T07:38:45+05:45", "for":"Weed turf" }
         ]
     }   
 }
