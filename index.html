@@ -32,7 +32,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                 <template x-for="roster in $store.gtav.data.blackMandem?.roster">
                     <div class="text-center space-y-4">
-                        <img class="size-50 mx-auto rounded-full border border-black/10 shadow shadow-black/60" :src="roster.avatar" :alt="roster.name" loading="lazy">
+                        <img class="size-50 mx-auto rounded-full border border-black/10 shadow shadow-black/60" :src="'https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main' + roster.avatar" :alt="roster.name" loading="lazy">
                         <div class="flex flex-col leading-tight">
                             <span class="text-lg font-display" x-text="roster.name"></span>
                             <span class="text-gray-700 font-bangers capitalize" x-text="roster.role"></span>
