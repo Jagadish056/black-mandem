@@ -4,6 +4,9 @@
     --font-display: 'Black Ops One', display;
     --font-atomic: 'Atomic Age', display;
     --font-aladin: 'Aladin', handwriting;
+    --font-bangers: 'Bangers', display;
+    --font-lemon: 'Lemon', display;
+    --font-langar: 'Langar', display;
 
     --animate-typing: typing 2.5s steps(13) forwards;
     --animate-blink: blink 0.8s step-end infinite;

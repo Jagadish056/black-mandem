@@ -13,7 +13,7 @@
                 "key":"mrwagle",
                 "role":"leader",
                 "name":"Mr Wagle",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411331038046851294/image.png?ex=68bb8434&is=68ba32b4&hm=01f8f0750459d0781ffd15918e0aa735d7c869f0d9c31900e9709a93ef81e918&=&format=webp&quality=lossless&width=399&height=630",
+                "avatar":"/images/mrwagle.png",
                 "slogan":"Thuuk lagayera hanchu, aija..",
                 "description":""
                 
@@ -22,7 +22,7 @@
                 "key":"lalosalamanca",
                 "role":"co-leader",
                 "name":"Lalo Salamanca",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411421102303084615/image.png?ex=68bb2f55&is=68b9ddd5&hm=80c7190419b328ce19e7d4250148d36b8a7cd3a80968c41dd90f6a5985d296a1&=&format=webp&quality=lossless&width=515&height=680",
+                "avatar":"/images/lalosalamanca.png",
                 "slogan":"Thuuk haina khakar ko jhataro hanchu",
                 "description":"" 
             },
@@ -30,7 +30,7 @@
                 "key":"kaluyadav",
                 "role":"Member",
                 "name":"Kalu Yadav",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411338182431342745/image.png?ex=68bb8adc&is=68ba395c&hm=4cc7d675b70e3e2dd7ca26443b458492d494abc6292674132ec0fcf572563b5b&=&format=webp&quality=lossless&width=203&height=280",
+                "avatar":"/images/kaluyadav.png",
                 "slogan":"Bhasme don",
                 "description":"" 
             },
@@ -38,7 +38,7 @@
                 "key":"mrmadx",
                 "role":"Member",
                 "name":"Mr Madx",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1412879266567163988/image.png?ex=68bbe01b&is=68ba8e9b&hm=295ddeea6f2a4a3c48e26e1ae33aac018b397e66a806689a7b7e830dfe337813&=&format=webp&quality=lossless&width=392&height=559",
+                "avatar":"/images/mrmadx.png",
                 "slogan":"Bhasme don",
                 "description":"" 
             },
@@ -46,7 +46,7 @@
                 "key":"jaxlama",
                 "role":"Member",
                 "name":"Jax Lama",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411335735063089344/image.png?ex=68bb8894&is=68ba3714&hm=4f0b582b09cd8cbb70119d554d3b6a523482d346e8868d6fb14cf0cae789105f&=&format=webp&quality=lossless&width=398&height=559",
+                "avatar":"/images/jaxlama.png",
                 "slogan":"Crazy Lama",
                 "description":"" 
             },
@@ -54,7 +54,7 @@
                 "key":"princewalker",
                 "role":"Member",
                 "name":"Prince Walker",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411336722716954704/image.png?ex=68bb8980&is=68ba3800&hm=23f7d0c27bf5813401f54d5e62a39e4ba733963342e66e5a51cd20998d146f85&=&format=webp&quality=lossless&width=447&height=559",
+                "avatar":"/images/princewalker.png",
                 "slogan":"Prince Flick",
                 "description":"" 
             },
@@ -62,7 +62,7 @@
                 "key":"bhuntechaudary",
                 "role":"Member",
                 "name":"Bhunte Chaudary",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411456123042660452/image.png?ex=68bbf8b3&is=68baa733&hm=41d9c7ad2fcc3e0a84a85d9f8403875c6ac0451de5c9989227507e77fad168c5&=&format=webp&quality=lossless&width=551&height=559",
+                "avatar":"/images/bhuntechaudary.png",
                 "slogan":"Vuntey",
                 "description":"" 
             },
@@ -71,7 +71,7 @@
                 "key":"dextermorgan",
                 "role":"Member",
                 "name":"Dexter Morgan",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1411332458057699338/image.png?ex=68bb8587&is=68ba3407&hm=3ece3f7c46d255839a2a9c1ca78da9e2110ed6f0924ee0d4abf617426edeb5bc&=&format=webp&quality=lossless&width=380&height=559",
+                "avatar":"/images/dextermorgan.png",
                 "slogan":"Dexter",
                 "description":"" 
             },
@@ -79,7 +79,7 @@
                 "key":"jigsaw",
                 "role":"Member",
                 "name":"Jig Saw",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1412876373122617414/image.png?ex=68bbdd69&is=68ba8be9&hm=06e56c4b5c5ab95280d40a4206aa95eb7415d624b98914f5b7d56a67807af4b9&=&format=webp&quality=lossless&width=484&height=558",
+                "avatar":"/images/jigsaw.png",
                 "slogan":"jigsaw",
                 "description":"" 
             },
@@ -87,7 +87,7 @@
                 "key":"generalgoley",
                 "role":"Member",
                 "name":"General Goley",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Goley",
                 "description":"" 
             },
@@ -95,7 +95,7 @@
                 "key":"oxygensurvival",
                 "role":"Member",
                 "name":"Oxygen Survival",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Jagadish",
                 "description":"" 
             },            
@@ -104,7 +104,7 @@
                 "key":"simonshrestha",
                 "role":"Member",
                 "name":"Simon Shrestha",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Simon",
                 "description":"" 
             },
@@ -112,7 +112,7 @@
                 "key":"pabloescobar",
                 "role":"Member",
                 "name":"Pablo Escobar",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Pablo",
                 "description":"" 
             },
@@ -120,7 +120,7 @@
                 "key":"alulukhathu",
                 "role":"Member",
                 "name":"Alu lu Kha Thu",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Alu lu",
                 "description":"" 
             },
@@ -128,39 +128,39 @@
                 "key":"mrmanna",
                 "role":"Member",
                 "name":"Mr Manna",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"manna",
                 "description":"" 
             },
             { 
                 "key":"prospect1",
-                "role":"Prospect Member",
+                "role":"Prospect",
                 "name":"Supreme",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Supreme",
                 "description":"" 
             },
             { 
                 "key":"prospect2",
-                "role":"Prospect Member",
+                "role":"Prospect",
                 "name":"Thulo dai",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Thulo dai",
                 "description":"" 
             },
             { 
                 "key":"prospect3",
-                "role":"Prospect Member",
+                "role":"Prospect",
                 "name":"Gabbar Rathore",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Gabbar",
                 "description":"" 
             },
             { 
                 "key":"prospect4",
-                "role":"Prospect Member",
+                "role":"Prospect",
                 "name":"Bahun Sir",
-                "avatar":"https://media.discordapp.net/attachments/1351926335651450913/1403210152085164163/CF7AAC21-6A78-4DE1-8A20-C31D17E1A0C3.png?ex=68bba2ca&is=68ba514a&hm=5cfb6dae9833aa9db4a3945c885500ac5bf3ae722f4dd09aac772c198eb50ea8&=&format=webp&quality=lossless&width=243&height=280",
+                "avatar":"/images/m.png",
                 "slogan":"Bahun",
                 "description":"" 
             },
@@ -168,7 +168,7 @@
                 "key":"prospect5",
                 "role":"Coming Soon",
                 "name":"BLACK MANDEM",
-                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "avatar":"/images/m.png",
                 "slogan":"MANDEM",
                 "description":"" 
             },
@@ -176,7 +176,7 @@
                 "key":"prospect6",
                 "role":"Coming Soon",
                 "name":"BLACK MANDEM",
-                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "avatar":"/images/m.png",
                 "slogan":"MANDEM",
                 "description":"" 
             },
@@ -184,7 +184,7 @@
                 "key":"prospect7",
                 "role":"Coming Soon",
                 "name":"BLACK MANDEM",
-                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "avatar":"/images/m.png",
                 "slogan":"MANDEM",
                 "description":"" 
             },
@@ -192,7 +192,7 @@
                 "key":"prospect8",
                 "role":"Coming Soon",
                 "name":"BLACK MANDEM",
-                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "avatar":"/images/m.png",
                 "slogan":"MANDEM",
                 "description":"" 
             },
@@ -200,7 +200,7 @@
                 "key":"prospect9",
                 "role":"Coming Soon",
                 "name":"BLACK MANDEM",
-                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "avatar":"/images/m.png",
                 "slogan":"MANDEM",
                 "description":"" 
             },
@@ -208,16 +208,45 @@
                 "key":"prospect10",
                 "role":"Coming Soon",
                 "name":"BLACK MANDEM",
-                "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClix-qrbjwTkut7smZGAz4edtAZ0G1isH9G6OTEK95Wh0zWyvB_RySrnbi_DFLsrb2zw&usqp=CAU",
+                "avatar":"/images/m.png",
                 "slogan":"MANDEM",
                 "description":"" 
             }
         ],
 
-        "vs":[
-            { "status":"success", "title":"Victory", "subtitle":"GSF", "date":"2025-09-05T07:38:45+05:45", "for":"Gang Domination" },
-            { "status":"danger", "title":"Defeat", "subtitle":"Vagos", "date":"2025-09-05T07:38:45+05:45", "for":"Weed processing area" },
-            { "status":"success", "title":"Victory", "subtitle":"GSF", "date":"2025-09-05T07:38:45+05:45", "for":"Weed turf" }
+        "history":[
+            { 
+                "color":"success",
+                "event":"Gang War",
+                "title":"Victory",
+                "subtitle":"Ballas, GSF, Triads, CG, Vagos",
+                "timestamp":"2025-09-05T22:30:00+05:45",
+                "remarks":"(50/50) Shared alliance with Vagos" 
+            },
+            {
+                "color":"success",
+                "event":"Meetup",
+                "title":"Celebration",
+                "subtitle":"Vagos",
+                "timestamp":"2025-09-06T17:30:00+05:45",
+                "remarks":"Mutual respect, shared weed process area & upcoming deals"
+            },
+            {
+                "color":"dark",
+                "event":"Robbery",
+                "title":"Schedule",
+                "subtitle":"Vangelico Heist",
+                "timestamp":"2026-09-08T21:00:00+05:45",
+                "remarks":"Robbery & Escaped"
+            },
+            {
+                "color":"warning",
+                "event":"Code Red",
+                "title":"Schedule",
+                "subtitle":"Police Department (PD)",
+                "timestamp":"2026-09-07T21:00:00+05:45",
+                "remarks":"Cyprus Flat, SMG"
+            }
         ]
     }   
 }

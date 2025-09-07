@@ -1,21 +1,23 @@
 document.addEventListener('alpine:init', () => {
 
-    Alpine.store('dev', false)
+    Alpine.store('dev', window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
 
     Alpine.store('gtav', {
         data: {},
 
         init() {
             this.getData()
-            .then(res => this.data = res)
-            .catch(err => console.error('Failed to load GTAV data:', err))
+            .then(res => {
+                res.blackMandem?.history.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
+                this.data = res
+            })
+            .catch(err => console.error('Failed to load:', err))
         },
 
         async getData() {
-            
-            const url = Alpine.store('dev') ? "/gtav.json" : "https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main/gtav.json"
-             
-            return await axios.get(url ).then(res => res.data)
+            return await axios.get(
+                Alpine.store('dev') ? "/gtav.json" : "https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main/gtav.json"
+            ).then(res => res.data)
         }
     })
 
