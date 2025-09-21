@@ -3,10 +3,11 @@
 @theme {
     --font-display: 'Black Ops One', display;
     --font-atomic: 'Atomic Age', display;
-    --font-aladin: 'Aladin', handwriting;
     --font-bangers: 'Bangers', display;
     --font-lemon: 'Lemon', display;
     --font-langar: 'Langar', display;
+    --font-aladin: 'Aladin', handwriting;
+    --font-timmana: 'Timmana', sans-serif;
 
     --animate-typing: typing 2.5s steps(13) forwards;
     --animate-blink: blink 0.8s step-end infinite;
@@ -17,4 +18,9 @@
     @keyframes blink {
         50% { borderColor: "transparent" }
     }
+}
+
+[id^="___ytsubscribe_"], [id^="___ytsubscribe_"]  iframe {
+    width: 180px !important;    
+    height: 48px !important;    
 }

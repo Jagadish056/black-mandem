@@ -1,12 +1,55 @@
-
 {
-    "blackMandem": {
+    "data": {
 
-        "banner":[
-            {
+        "wallpaper":[
+            "/images/hood.jpeg",
+            "/images/1.jpg",
+            "/images/1.png",
 
-            }
+            "/images/5.png",
+            "/images/6.png"
         ],
+
+        "images":[
+            "/images/hood.jpeg",
+            "/images/1.jpg",
+            "/images/1.png",
+            "/images/2.png",
+            "/images/3.png",
+            "/images/4.png",
+            "/images/5.png",
+            "/images/6.png",
+            "/images/7.png",
+            "/images/8.png",
+            "/images/9.png",
+            "/images/10.png",
+            "/images/11.png",
+            "/images/12.png",
+            "/images/13.png",
+            "/images/14.png"
+        ],
+
+        "tabs":["Featured", "YouTube", "Merchant", "Roster", "Character", "Gallery"],
+
+        "featured":{
+            "yt":[ 
+                { "id":"j6p8YlFpMgQ", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"Zj8nL5EEHjo", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"HPwmdTZX47A", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"j6p8YlFpMgQ", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"Zj8nL5EEHjo", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"HPwmdTZX47A", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"j6p8YlFpMgQ", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"Zj8nL5EEHjo", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"HPwmdTZX47A", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"j6p8YlFpMgQ", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"Zj8nL5EEHjo", "title":"Thuuk haina khakar ko jhataro hanchu" },
+                { "id":"HPwmdTZX47A", "title":"Thuuk haina khakar ko jhataro hanchu" }
+                
+            ]
+        },
+
+        "merchant": [""],
 
         "roster": [                
             {
@@ -15,6 +58,7 @@
                 "name":"Mr Wagle",
                 "avatar":"/images/mrwagle.png",
                 "slogan":"Thuuk lagayera hanchu, aija..",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":""
                 
             },
@@ -24,6 +68,7 @@
                 "name":"Lalo Salamanca",
                 "avatar":"/images/lalosalamanca.png",
                 "slogan":"Thuuk haina khakar ko jhataro hanchu",
+                "channelId":"UC4FbxybwJiflIrYf6SxnpQA",
                 "description":"" 
             },
             { 
@@ -31,7 +76,8 @@
                 "role":"Member",
                 "name":"Kalu Yadav",
                 "avatar":"/images/kaluyadav.png",
-                "slogan":"Bhasme don",
+                "slogan":"Raute Dai",
+                "channelId":"UC6HNEPasjxGW8MO7D7dNhQA",
                 "description":"" 
             },
             { 
@@ -40,6 +86,7 @@
                 "name":"Mr Madx",
                 "avatar":"/images/mrmadx.png",
                 "slogan":"Bhasme don",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -48,6 +95,7 @@
                 "name":"Jax Lama",
                 "avatar":"/images/jaxlama.png",
                 "slogan":"Crazy Lama",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -56,6 +104,7 @@
                 "name":"Prince Walker",
                 "avatar":"/images/princewalker.png",
                 "slogan":"Prince Flick",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -64,6 +113,7 @@
                 "name":"Bhunte Chaudary",
                 "avatar":"/images/bhuntechaudary.png",
                 "slogan":"Vuntey",
+                "channelId":"UCR3QG06M-5qYYKR-87eQE9w",
                 "description":"" 
             },
             
@@ -73,6 +123,7 @@
                 "name":"Dexter Morgan",
                 "avatar":"/images/dextermorgan.png",
                 "slogan":"Dexter",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -80,7 +131,82 @@
                 "role":"Member",
                 "name":"Jig Saw",
                 "avatar":"/images/jigsaw.png",
-                "slogan":"jigsaw",
+                "slogan":"Jigsaw",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
+                "description":"" 
+            },
+
+            { 
+                "key":"oxygensurvival",
+                "role":"Member",
+                "name":"Oxygen Survival",
+                "avatar":"/images/oxygensurvival.png",
+                "slogan":"Jagadish",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
+                "description":"" 
+            },            
+
+            { 
+                "key":"simonshrestha",
+                "role":"Member",
+                "name":"Simon Shrestha",
+                "avatar":"/images/simonshrestha.png",
+                "slogan":"Simon",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
+                "description":"" 
+            },
+            { 
+                "key":"pabloescobar",
+                "role":"Member",
+                "name":"Pablo Escobar",
+                "avatar":"/images/pabloescobar.png",
+                "slogan":"Pablo",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
+                "description":"" 
+            },
+            { 
+                "key":"alulukhathu",
+                "role":"Member",
+                "name":"Alu lu Kha Thu",
+                "avatar":"/images/alulukhathu.png",
+                "slogan":"Alu lu",
+                "channelId":"UCRT8YeTVwENezTKw6vSqOnw",
+                "description":"" 
+            },
+            { 
+                "key":"mrmanna",
+                "role":"Member",
+                "name":"Mr Manna",
+                "avatar":"/images/mrmanna.png",
+                "slogan":"manna",
+                "channelId":"UCCbI1FNo1vje2WCfSb6JguA",
+                "description":"" 
+            },
+            { 
+                "key":"avinab",
+                "role":"Member",
+                "name":"Avinab",
+                "avatar":"/images/avinab.png",
+                "slogan":"avinab",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
+                "description":"" 
+            },
+            { 
+                "key":"gauley",
+                "role":"Member",
+                "name":"Gauley",
+                "avatar":"/images/gauley.png",
+                "slogan":"Gauley",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
+                "description":"" 
+            },
+            { 
+                "key":"candy",
+                "role":"Member",
+                "name":"Candy",
+                "avatar":"/images/candy.png",
+                "slogan":"candy",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -89,47 +215,7 @@
                 "name":"General Goley",
                 "avatar":"/images/m.png",
                 "slogan":"Goley",
-                "description":"" 
-            },
-            { 
-                "key":"oxygensurvival",
-                "role":"Member",
-                "name":"Oxygen Survival",
-                "avatar":"/images/m.png",
-                "slogan":"Jagadish",
-                "description":"" 
-            },            
-
-            { 
-                "key":"simonshrestha",
-                "role":"Member",
-                "name":"Simon Shrestha",
-                "avatar":"/images/m.png",
-                "slogan":"Simon",
-                "description":"" 
-            },
-            { 
-                "key":"pabloescobar",
-                "role":"Member",
-                "name":"Pablo Escobar",
-                "avatar":"/images/m.png",
-                "slogan":"Pablo",
-                "description":"" 
-            },
-            { 
-                "key":"alulukhathu",
-                "role":"Member",
-                "name":"Alu lu Kha Thu",
-                "avatar":"/images/m.png",
-                "slogan":"Alu lu",
-                "description":"" 
-            },
-            { 
-                "key":"mrmanna",
-                "role":"Member",
-                "name":"Mr Manna",
-                "avatar":"/images/m.png",
-                "slogan":"manna",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -138,6 +224,7 @@
                 "name":"Supreme",
                 "avatar":"/images/m.png",
                 "slogan":"Supreme",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -146,6 +233,7 @@
                 "name":"Thulo dai",
                 "avatar":"/images/m.png",
                 "slogan":"Thulo dai",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -154,6 +242,7 @@
                 "name":"Gabbar Rathore",
                 "avatar":"/images/m.png",
                 "slogan":"Gabbar",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -162,6 +251,7 @@
                 "name":"Bahun Sir",
                 "avatar":"/images/m.png",
                 "slogan":"Bahun",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -170,6 +260,7 @@
                 "name":"BLACK MANDEM",
                 "avatar":"/images/m.png",
                 "slogan":"MANDEM",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -178,6 +269,7 @@
                 "name":"BLACK MANDEM",
                 "avatar":"/images/m.png",
                 "slogan":"MANDEM",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -186,6 +278,7 @@
                 "name":"BLACK MANDEM",
                 "avatar":"/images/m.png",
                 "slogan":"MANDEM",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -194,6 +287,7 @@
                 "name":"BLACK MANDEM",
                 "avatar":"/images/m.png",
                 "slogan":"MANDEM",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -202,6 +296,7 @@
                 "name":"BLACK MANDEM",
                 "avatar":"/images/m.png",
                 "slogan":"MANDEM",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             },
             { 
@@ -210,6 +305,7 @@
                 "name":"BLACK MANDEM",
                 "avatar":"/images/m.png",
                 "slogan":"MANDEM",
+                "channelId":"UCpBcjGJXerbt3CbtU8OkyXQ",
                 "description":"" 
             }
         ],

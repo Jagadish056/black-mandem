@@ -5,47 +5,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BLACK MANDEM</title>
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=aladin:400|atomic-age:400|bangers:400|black-ops-one:400|lemon:400|langar:400" rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?family=aladin:400|atomic-age:400|bangers:400|black-ops-one:400|lemon:400|langar:400|timmana:400" rel="stylesheet" />
 
         <!-- <link href="/style.css" rel="stylesheet"> -->
         <link href="https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main/style.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     </head>
-    <body class="h-screen overflow-x-hidden" x-data x-init="$store.gtav.init()">
+    <body class="h-screen overflow-x-hidden" x-data="app">
         <!-- background-image: linear-gradient(to bottom, rgba(29, 27, 27, 1), rgba(29, 27, 27, 0.5)), url('./images/3.png') -->
-       <div class="h-11/12 p-16 text-white bg-black relative overflow-hidden" x-data="hero" >
+       <div id="hero" class="h-11/12 p-16 text-white bg-black relative overflow-hidden" x-data="hero" >
 
             <!-- Background layer -->
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed transition-all ease-in-out duration-1000 opacity-0" :class="{ 'opacity-100': loading }"
-                :style="`background-image: url('${backgroundImages[activeBackgroundImage]}')`">
-            </div>
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed transition-all ease-in-out duration-1000 opacity-0" :class="{ 'opacity-100': loading }" :style="$store.api.data.wallpaper ? `background-image: url('${$store.api.baseUrl + $store.api.data.wallpaper[activeWallpaper]}')`: ''"></div>
 
             <!-- Title -->
-            <h1 class="absolute top-1/6 block w-full text-[200px] leading-40 text-center font-display transition-all ease-in duration-1000 opacity-0" :class="{ 'opacity-100': !loading || activeBackgroundImage == 0 }">BLACK<br>MANDEM</h1>
+            <h1 class="absolute top-1/6 block w-full text-[200px] leading-40 text-center font-display transition-all ease-in duration-1000 opacity-0" :class="{ 'opacity-100': !loading || activeWallpaper == 0 }">BLACK<br>MANDEM</h1>
+          
+            
         </div>
 
-        <div class="max-w-7xl w-full mx-auto p-16">
-            <h2 class="mb-16 text-7xl text-center font-display underline underline-offset-8">Our Roster</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-                <template x-for="roster in $store.gtav.data.blackMandem?.roster">
-                    <div class="text-center space-y-4">
-                        <img class="size-50 mx-auto rounded-full border border-black/10 shadow shadow-black/60" :src="'https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main' + roster.avatar" :alt="roster.name" loading="lazy">
-                        <div class="flex flex-col leading-tight">
-                            <span class="text-lg font-display" x-text="roster.name"></span>
-                            <span class="text-gray-700 font-bangers capitalize" x-text="roster.role"></span>
+        <div class="py-16 bg-white" x-data="{ tab:0, tabs: [] }" x-effect="tabs= $store.api.data.tabs ?? []" x-show="tabs.length" >
+            <div class="max-w-7xl w-full mx-auto space-y-8">
+                <div class="flex items-center justify-evenly gap-10">
+                    <i class="fa-regular fa-lg fa-circle-left cursor-pointer" @click="tab = (tab == 0 ? tabs.length : tab) - 1"></i>
+                    <span class="text-7xl font-display uppercase" x-text="tabs[tab]"></span>
+                    <i class="fa-regular fa-lg fa-circle-right cursor-pointer" @click="tab = tab == (tabs.length - 1) ? 0 : (tab + 1)"></i>
+                </div>
+
+                <div class="text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" x-show="tabs[tab]?.toLowerCase() == 'featured'" x-transition>
+                    <template x-for="yt in $store.api.data.featured?.yt">
+                        <a class=" border border-black/10 group" :href="`https://youtu.be/` + yt.id">
+                            <figure class="aspect-video relative before:absolute before:bottom-0 before:right-0 before:z-0 before:content-['play'] before:px-2 before:text-[13px] before:text-white before:bg-red-600/95 before:font-display before:italic before:uppercase group-hover:before:animate-pulse">
+                                <img class="size-full" :src="`https://img.youtube.com/vi/${yt.id}/maxresdefault.jpg`" alt="tvsyp08Uylw" loading="lazy">
+                            </figure>
+                        </a>      
+                    </template>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" x-show="tabs[tab]?.toLowerCase() == 'youtube'" x-transition>
+                    <template x-for="channel in $store.api.data.roster?.pluck('channelId').unique()">
+                        <div class="g-ytsubscribe" :data-channelid="channel" data-layout="full" data-count="default"></div>
+                    </template>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6" x-show="tabs[tab]?.toLowerCase() == 'roster'" x-transition>
+                    <template x-for="roster in $store.api.data.roster">
+
+                            <img class="size-50 mx-auto rounded-full border border-black/10 shadow shadow-black/60" :src="$store.api.baseUrl + roster.avatar" :alt="roster.name" loading="lazy">
+
+                    </template>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2" x-show="tabs[tab]?.toLowerCase() == 'gallery'" x-transition>
+                    <template x-for="img in $store.api.data.images">
+                        <img class="aspect-video" :src="$store.api.baseUrl + img" :alt="img" loading="lazy">
+                    </template>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8" x-show="tabs[tab]?.toLowerCase() == 'character'" x-transition>
+                    <template x-for="roster in $store.api.data.roster">
+                        <div class="h-64 flex items-start gap-4 overflow-hidden">
+                            <img class="w-48 h-full shrink-0" :src="$store.api.baseUrl + roster.avatar" :alt="roster.name" loading="lazy">
+                            <div class="h-full p-4 flex-1 flex flex-col leading-tight overflow-y-auto">
+                                <span class="text-xs font-lemon text-gray-600" x-text="roster.slogan"></span>
+                                <a class="mt-1 mb-2 text-xs text-red-600 italic flex items-center gap-1" :href="`https://www.youtube.com/channel/` + roster.channelId" target="_blank">
+                                    <i class="mt-1 fa-brands fa-lg fa-youtube"></i>
+                                    <span class="text-gray-300 font-black">·</span>
+                                    <span x-text="roster.channelId"></span>
+                                </a>
+
+                                <span class="text-lg font-display" x-text="roster.name"></span>
+      
+                                <span class="text-gray-700 font-aladin capitalize" x-text="roster.role"></span>
+                                <hr class="my-3 border-black/10">
+                                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora aperiam cum laboriosam minus minima atque repudiandae. Consequuntur porro nihil quia itaque voluptates, nesciunt ullam, perferendis suscipit ipsa, architecto vero!
+                                Quidem eaque, dicta nemo fuga molestiae vitae optio dignissimos animi quisquam alias, a nihil aliquid incidunt reprehenderit reiciendis dolore similique? Minima consequuntur repudiandae rerum modi, accusamus dolorem quibusdam libero est?</p>
+                            </div>
                         </div>
-                    </div>
-                </template>
+                    </template>
+                </div>
             </div>
         </div>
-        <div class="text-white bg-black">
+
+        <div id="history" class="text-white bg-black">
             <div class="max-w-7xl w-full mx-auto p-16 text-center ">
                 <h2 class="mb-16 text-7xl font-display">OUR HISTORY</h2>
                 <ul>
-                    <template x-for="vs in $store.gtav.data.blackMandem?.history">
+                    <template x-for="vs in $store.api.data?.history">
                         <li class="p-4 border-y border-white/5 flex items-center justify-between gap-4"
                         :class="{
                             'text-green-100 bg-gradient-to-r from-green-900/5 via-lime-600/40 to-green-900/5': vs.color === 'success',
@@ -67,17 +120,17 @@
                 </ul>
             </div>
         </div>
-        <div class="mx-auto p-32 text-center text-black bg-white flex flex-col items-center justify-center gap-4">
+        <div id="become-a-mandem" class="mx-auto p-32 text-center text-black bg-white flex flex-col items-center justify-center gap-4">
             <h2 class="text-5xl text-center font-display">BECOME A MANDEM?</h2>
             <a class="px-4 py-2 text-4xl font-bangers text-white bg-black rounded-lg cursor-pointer" href="https://technojs.com">Contact Us</a>
         </div>
-        <div class="p-16 text-white bg-black">
+        <div id="thank-you" class="p-16 text-white bg-black">
             <h2 class="mb-4 text-7xl text-center font-display">THANK YOU!</h2>
-            <img class="size-40 mx-auto" src="./images/balen-city-survival.png" alt="balen city survival">
+            <img class="size-40 mx-auto" :src="$store.api.baseUrl + `/images/balen-city-survival.png`" alt="balen city survival">
         </div>
         
+        <!-- <script src="/script.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main/script.js"></script>
     </body>
     
-    <!-- <script src="/script.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main/script.js"></script>
 </html>
