@@ -62,7 +62,7 @@ document.addEventListener('alpine:init', () => {
 
     Alpine.data('app', () => ({
         init() {
-            this.$store.api.baseUrl = Alpine.store('dev') ? "" : "https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@main"
+            this.$store.api.baseUrl = Alpine.store('dev') ? "" : "https://cdn.jsdelivr.net/gh/Jagadish056/black-mandem@c336eae"
             this.$store.api.init()
 
             // this.$nextTick(() => {
